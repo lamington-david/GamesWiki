@@ -25,6 +25,14 @@ resources:
     duration: "8 min read"
     summary: "Examines the paradox at the heart of Isaac's commercial success: McMillen designed the game to be niche, confrontational, and commercially unappealing, and those qualities became the engine of its virality. The piece traces how content touching on child abuse, religion, and bodily horror attracted exactly the cult audience that would evangelise the game."
     url: "https://www.gamedeveloper.com/design/behind-i-binding-of-isaac-i-s-blasphemous-success"
+  - type: video
+    title: "Edmund McMillen on The Making of The Binding of Isaac, The Legend of Bum-Bo & More"
+    speaker: "Edmund McMillen"
+    source: "YouTube"
+    year: 2021
+    duration: "52 min"
+    summary: "Wide-ranging interview with McMillen covering the origin of The Binding of Isaac from a desire to make a \"basic roguelike\" prototype, the three-month development sprint with Florian Himsl, how the game's confessional religious content emerged from personal experience, and reflections on Isaac's unexpected legacy as one of the genre's defining works. Also covers the full arc from original to Rebirth to Repentance."
+    url: "https://www.youtube.com/watch?v=-X_QYumQQGk"
   - type: article
     title: "Rise of the Roguelikes: Why The Binding of Isaac Makes for Great Stories"
     author: "Game Developer Staff"

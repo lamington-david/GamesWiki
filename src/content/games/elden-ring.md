@@ -14,6 +14,7 @@ resources:
     speaker: "Hidetaka Miyazaki"
     source: "PlayStation Blog"
     year: 2022
+    thumbnail: "https://blog.playstation.com/tachyon/2022/01/79566eb45dc067f8f38690fdb31a9ce7b61f237d.jpg?resize=1088%2C612&crop_strategy=smart"
     summary: "Miyazaki explains the two central design challenges of Elden Ring: opening the world without compromising the studio's gameplay style, and managing tempo so exploration feels earned rather than obligatory. He discusses how the open world was designed around freedom of progression rather than accessibility, and how multiplayer integration was reconsidered for an overworld context."
     url: "https://blog.playstation.com/2022/01/28/an-interview-with-fromsoftwares-hidetaka-miyazki/"
   - type: article
