@@ -252,11 +252,45 @@ const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e6
 </BaseLayout>
 
 <style>
-  .prose h2 { color: #e2e8f0; font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
-  .prose h3 { color: #cbd5e1; font-size: 0.9375rem; font-weight: 600; margin: 1rem 0 0.375rem; }
-  .prose p { margin-bottom: 0.875rem; }
-  .prose ul { margin-left: 1.25rem; list-style: disc; margin-bottom: 0.875rem; }
-  .prose li { margin-bottom: 0.25rem; }
+  .prose {
+    line-height: 1.85;
+    max-width: 680px;
+  }
+  .prose h2 {
+    color: #e2e8f0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 2.25rem 0 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .prose h3 {
+    color: #cbd5e1;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.375rem;
+  }
+  /* Paragraphs: indent all, space between */
+  .prose p {
+    margin-bottom: 0;
+    padding-bottom: 1.25rem;
+    text-indent: 1.75em;
+  }
+  /* No indent after a heading — first para of a new section */
+  .prose h2 + p,
+  .prose h3 + p {
+    text-indent: 0;
+  }
+  /* No indent when paragraph opens with bold (e.g. **Term.** format) */
+  .prose p:has(> strong:first-child) {
+    text-indent: 0;
+  }
+  .prose ul {
+    margin-left: 1.5rem;
+    list-style: disc;
+    padding-bottom: 0.875rem;
+    text-indent: 0;
+  }
+  .prose li { margin-bottom: 0.375rem; }
   .prose strong { color: #e2e8f0; }
   .prose a { color: #818cf8; text-decoration: underline; }
 </style>
