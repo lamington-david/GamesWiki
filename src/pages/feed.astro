@@ -49,7 +49,7 @@ const allUrls = feedItems.map(r => r.url);
     <div id="feed-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
       {feedItems.map((item) => (
         <div class="feed-item" data-url={item.url} data-game-slug={item.gameSlug}>
-          <ResourceCard resource={item} gameName={item.gameName} />
+          <ResourceCard resource={item} gameName={item.gameName} gameSlug={item.gameSlug} />
         </div>
       ))}
     </div>

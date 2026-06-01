@@ -15,9 +15,10 @@ interface Resource {
 interface Props {
   resource: Resource;
   gameName?: string;
+  gameSlug?: string;
 }
 
-const { resource, gameName } = Astro.props;
+const { resource, gameName, gameSlug } = Astro.props;
 
 const typeConfig: Record<string, { label: string; color: string; bg: string; border: string; unreadBorder: string; gradientA: string; gradientB: string }> = {
   gdc_talk:    { label: 'GDC Talk',    color: '#c4b5fd', bg: 'rgba(88,28,135,0.25)',  border: 'rgba(109,40,217,0.4)',  unreadBorder: '#7c3aed', gradientA: '#1e1040', gradientB: '#0d0820' },
@@ -49,6 +50,9 @@ const credit = resource.speaker ?? resource.author;
   class="resource-card-link"
   data-resource-url={resource.url}
   data-resource-type={resource.type}
+  data-resource-title={resource.title}
+  data-game-slug={gameSlug}
+  data-game-name={gameName}
   data-unread-border={config.unreadBorder}
   style={`display: block; background-color: #111827; border: 1px solid #1f2937; border-left: 3px solid ${config.unreadBorder}; border-radius: 0.5rem; overflow: hidden; text-decoration: none; color: inherit; transition: opacity 0.2s, border-color 0.15s; cursor: pointer; position: relative;`}
 >
@@ -119,8 +123,24 @@ const credit = resource.speaker ?? resource.author;
       {resource.summary}
     </p>
 
-    <div style="margin-top: 0.625rem; font-size: 0.7rem; color: #475569; display: flex; align-items: center; gap: 0.25rem;">
-      <span>↗</span><span>{domain}</span>
+    <div style="margin-top: 0.625rem; font-size: 0.7rem; color: #475569; display: flex; align-items: center; justify-content: space-between;">
+      <span style="display: flex; align-items: center; gap: 0.25rem;"><span>↗</span><span>{domain}</span></span>
+      <span style="display: flex; align-items: center; gap: 0.5rem;">
+        <!-- Note dot: visible when a note exists, applied client-side -->
+        <span data-note-dot={resource.url} style="display: none; width: 6px; height: 6px; border-radius: 50%; background-color: #0891b2;"></span>
+        <!-- Pencil button -->
+        <button
+          data-note-trigger
+          data-note-url={resource.url}
+          data-note-title={resource.title}
+          data-note-game-slug={gameSlug}
+          data-note-game-name={gameName}
+          data-note-type={resource.type}
+          style="background: none; border: none; cursor: pointer; padding: 0.25rem; color: #334155; font-size: 0.875rem; line-height: 1; border-radius: 0.25rem; transition: color 0.15s;"
+          title="Add note"
+          aria-label="Add note"
+        >✏️</button>
+      </span>
     </div>
   </div>
 </a>
