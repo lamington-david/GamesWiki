@@ -15,8 +15,15 @@ const { title, description = 'A design reference wiki for games' } = Astro.props
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#030712" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="GamesWiki" />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
   </head>
   <body style="background-color: #030712; color: #f1f5f9; min-height: 100vh;">
     <nav style="border-bottom: 1px solid #1f2937; background-color: #030712; position: sticky; top: 0; z-index: 50;">
@@ -40,4 +47,11 @@ const { title, description = 'A design reference wiki for games' } = Astro.props
       <p style="font-size: 0.875rem; color: #4b5563;">Design reference wiki — built from your Steam library</p>
     </footer>
   </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+  </script>
 </html>
