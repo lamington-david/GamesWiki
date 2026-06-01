@@ -254,8 +254,6 @@ const currentPath = Astro.url.pathname;
     nudgeCloseBtn.addEventListener('click', hideNudge);
 
     // ── Pencil button + card link clicks ────────────────────────────
-    const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
-    const readerTypes = new Set(['article', 'postmortem']);
 
     document.addEventListener('click', e => {
       // Note button (capture phase handles pencil clicks inside <a> tags)
@@ -289,11 +287,6 @@ const currentPath = Astro.url.pathname;
           gameName: card.dataset.gameName ?? '',
           type: type ?? 'resource',
         });
-      }
-
-      if (isFirefox && type && readerTypes.has(type)) {
-        e.preventDefault();
-        window.open('about:reader?url=' + encodeURIComponent(url), '_blank');
       }
     }, true);
 

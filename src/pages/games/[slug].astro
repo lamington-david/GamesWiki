@@ -195,8 +195,15 @@ const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e6
     window.addEventListener('notes-changed', renderMyNotes);
   </script>
 
-  <script define:vars={{ gameId: game.id, gameTitle: title }}>
-    import { getNotes, deleteNote } from '../../scripts/notes';
+  <!-- Pass game data via data attributes so the module script can read it -->
+  <div id="game-meta" data-game-id={game.id} data-game-title={title} style="display:none;"></div>
+
+  <script>
+    import { getNotes } from '../../scripts/notes';
+
+    const meta = document.getElementById('game-meta');
+    const gameId = meta?.dataset.gameId ?? '';
+    const gameTitle = meta?.dataset.gameTitle ?? '';
 
     function renderMyNotes() {
       const notes = getNotes();
@@ -218,18 +225,25 @@ const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e6
         <div style="background-color:#0f172a;border:1px solid #1e293b;border-left:3px solid #0891b2;border-radius:0.5rem;padding:0.875rem;">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:0.5rem;margin-bottom:0.5rem;">
             <span style="font-size:0.75rem;color:#64748b;background-color:#1e293b;padding:0.125rem 0.5rem;border-radius:9999px;white-space:nowrap;">${n.resourceType.replace(/_/g,' ')}</span>
-            <div style="display:flex;gap:0.5rem;flex-shrink:0;">
-              <button
-                onclick="document.dispatchEvent(new CustomEvent('open-note-drawer',{detail:{url:'${url.replace(/'/g,"\\'")}',title:'${n.resourceTitle.replace(/'/g,"\\'")}',gameSlug:'${gameId}',gameName:'${gameTitle.replace(/'/g,"\\'")}',type:'${n.resourceType}'}}))"
-                style="font-size:0.75rem;color:#818cf8;background:none;border:none;cursor:pointer;padding:0;">Edit</button>
-            </div>
+            <button class="my-note-edit-btn"
+              data-url="${url}" data-title="${n.resourceTitle.replace(/"/g,'&quot;')}"
+              data-game-slug="${gameId}" data-game-name="${gameTitle.replace(/"/g,'&quot;')}" data-type="${n.resourceType}"
+              style="font-size:0.75rem;color:#818cf8;background:none;border:none;cursor:pointer;padding:0;">Edit</button>
           </div>
-          <p style="font-size:0.8125rem;color:#e2e8f0;line-height:1.6;margin-bottom:0.5rem;white-space:pre-wrap;">${n.resourceTitle}</p>
+          <p style="font-size:0.8125rem;color:#e2e8f0;line-height:1.6;margin-bottom:0.5rem;">${n.resourceTitle}</p>
           <p style="font-size:0.875rem;color:#94a3b8;line-height:1.6;white-space:pre-wrap;">${n.note.replace(/</g,'&lt;')}</p>
-          ${n.tags.length ? `<div style="display:flex;flex-wrap:wrap;gap:0.375rem;margin-top:0.5rem;">${n.tags.map(t=>`<span style="font-size:0.7rem;color:#38bdf8;background-color:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.25);padding:0.1rem 0.4rem;border-radius:9999px;">#${t}</span>`).join('')}</div>` : ''}
+          ${n.tags.length ? `<div style="display:flex;flex-wrap:wrap;gap:0.375rem;margin-top:0.5rem;">${n.tags.map(t => `<span style="font-size:0.7rem;color:#38bdf8;background-color:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.25);padding:0.1rem 0.4rem;border-radius:9999px;">#${t}</span>`).join('')}</div>` : ''}
           <p style="font-size:0.7rem;color:#334155;margin-top:0.5rem;">${new Date(n.updatedAt).toLocaleDateString()}</p>
         </div>
       `).join('');
+
+      document.querySelectorAll<HTMLElement>('.my-note-edit-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.dispatchEvent(new CustomEvent('open-note-drawer', {
+            detail: { url: btn.dataset.url, title: btn.dataset.title, gameSlug: btn.dataset.gameSlug, gameName: btn.dataset.gameName, type: btn.dataset.type }
+          }));
+        });
+      });
     }
 
     renderMyNotes();
