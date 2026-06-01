@@ -79,6 +79,20 @@ const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e6
       )}
     </div>
 
+    <!-- Resources filter -->
+    {resources.length > 0 && (
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+        <button class="res-filter active-res-filter" data-filter="all"
+          style="padding: 0.3rem 0.875rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; border: 1px solid #4f46e5; background-color: #4f46e5; color: white; cursor: pointer;">
+          All ({resources.length})
+        </button>
+        <button class="res-filter" data-filter="unread"
+          style="padding: 0.3rem 0.875rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; border: 1px solid #1e293b; background-color: transparent; color: #94a3b8; cursor: pointer;">
+          Unread
+        </button>
+      </div>
+    )}
+
     <!-- Resources by section -->
     {resources.length === 0 && (
       <div style="text-align: center; padding: 3rem 0; color: #374151; border: 1px dashed #1e293b; border-radius: 0.5rem;">
@@ -111,6 +125,65 @@ const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e6
       </section>
     )}
   </div>
+
+  <script>
+    const READS_KEY = 'gw:reads';
+    function getReads() {
+      try { return JSON.parse(localStorage.getItem(READS_KEY) || '{}'); } catch { return {}; }
+    }
+
+    let currentFilter = 'all';
+
+    function applyFilter() {
+      const reads = getReads();
+      document.querySelectorAll<HTMLElement>('[data-resource-url]').forEach(card => {
+        const url = card.dataset.resourceUrl!;
+        const isRead = !!reads[url];
+        const show = currentFilter === 'all' || (currentFilter === 'unread' && !isRead);
+        const wrapper = card.closest<HTMLElement>('.resource-wrapper');
+        if (wrapper) wrapper.style.display = show ? '' : 'none';
+      });
+      // Hide empty sections
+      document.querySelectorAll<HTMLElement>('section').forEach(sec => {
+        const visible = Array.from(sec.querySelectorAll('.resource-wrapper')).some(w => (w as HTMLElement).style.display !== 'none');
+        sec.style.display = (sec.querySelectorAll('.resource-wrapper').length > 0 && !visible) ? 'none' : '';
+      });
+    }
+
+    function updateUnreadBtn() {
+      const reads = getReads();
+      const cards = document.querySelectorAll<HTMLElement>('[data-resource-url]');
+      const unread = Array.from(cards).filter(c => !reads[c.dataset.resourceUrl!]).length;
+      const btn = document.querySelector<HTMLElement>('[data-filter="unread"]');
+      if (btn) btn.textContent = `Unread (${unread})`;
+    }
+
+    document.querySelectorAll<HTMLElement>('.res-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentFilter = btn.dataset.filter!;
+        document.querySelectorAll<HTMLElement>('.res-filter').forEach(b => {
+          b.style.backgroundColor = 'transparent';
+          b.style.color = '#94a3b8';
+          b.style.borderColor = '#1e293b';
+        });
+        btn.style.backgroundColor = '#4f46e5';
+        btn.style.color = 'white';
+        btn.style.borderColor = '#4f46e5';
+        applyFilter();
+      });
+    });
+
+    // Wrap each resource card for show/hide without breaking layout
+    document.querySelectorAll<HTMLElement>('[data-resource-url]').forEach(card => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'resource-wrapper';
+      card.parentNode!.insertBefore(wrapper, card);
+      wrapper.appendChild(card);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => { updateUnreadBtn(); applyFilter(); });
+    window.addEventListener('storage', e => { if (e.key === READS_KEY) { updateUnreadBtn(); applyFilter(); } });
+  </script>
 </BaseLayout>
 
 <style>

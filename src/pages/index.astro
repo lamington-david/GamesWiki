@@ -72,6 +72,7 @@ const totalResources = sorted.reduce((sum, g) => sum + g.data.resources.length, 
             playtime={game.data.playtime}
             steam_rating={game.data.steam_rating}
             resourceCount={game.data.resources.length}
+            resourceUrls={game.data.resources.map(r => r.url)}
             slug={game.id}
             design_tags={game.data.design_tags}
           />
