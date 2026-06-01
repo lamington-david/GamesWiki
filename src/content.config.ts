@@ -10,6 +10,7 @@ const resourceSchema = z.object({
   year: z.number().optional(),
   summary: z.string(),
   url: z.string(),
+  thumbnail: z.string().optional(),
 });
 
 const games = defineCollection({

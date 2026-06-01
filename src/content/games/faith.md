@@ -14,14 +14,14 @@ resources:
     source: "GDC Vault"
     year: 2022
     summary: "Airdorf explains how designing at extreme pixel resolution forces every visual element to be intentional — there are no accidental details. He covers the rotoscoped animation technique used for cutscenes (originally done with a mouse, later a drawing tablet), how CGA's four-colour palette creates eerie abstraction, and why horror benefits from showing less rather than more."
-    url: "https://www.gdcvault.com/play/1026045/The-Art-of-FAITH-Horror"
+    url: "https://www.youtube.com/watch?v=RLh7xO-LRy4"
   - type: gdc_talk
     title: "MORTIS 101 — FAITH's Horror Design Toolkit"
     speaker: "Mason Smith (Airdorf)"
     source: "GDC Vault"
     year: 2023
     summary: "The eight-part horror design toolkit Airdorf developed while making the FAITH trilogy. He covers embracing vulnerability, earning and then betraying player trust, turning game mechanics against the player, the ethics of telegraphing scares in advance, and why horror is enhanced — not diminished — by giving players information about what's coming. Practical and unusually honest about what works versus what doesn't."
-    url: "https://www.gdcvault.com/play/1027195/MORTIS-101-FAITH-s-Horror"
+    url: "https://www.youtube.com/watch?v=04bt3aFwKc8"
   - type: article
     title: "Using Minimalism to Channel the Fear of the Unknown in FAITH"
     source: "Game Developer"
