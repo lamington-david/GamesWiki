@@ -1,0 +1,379 @@
+
+	
+	
+Name
+	
+Price/Hour
+	
+au Price
+	
+Time
+	
+Rating
+		ELDEN RING 	0.50 	A$ 89.95 	181.6h 	92.40%
+		Apex Legends 	- 	Free 	155.1h 	67.40%
+		The Binding of Isaac 	0.06 	A$ 7.50 	119.4h 	93.12%
+		Persona 4 Golden 	0.29 	A$ 29.95 	104.4h 	95.49%
+		The Binding of Isaac: Rebirth 	0.34 	A$ 19.99 	59.6h 	96.22%
+		DARK SOULS™ III 	1.57 	A$ 84.95 	54.0h 	93.46%
+		The Elder Scrolls V: Skyrim 	0.62 	A$ 29.95 	48.1h 	93.81%
+		Hades 	0.79 	A$ 36.50 	46.0h 	96.97%
+		Dungeons of Dredmor 	0.26 	A$ 11.79 	45.7h 	90.53%
+		Disco Elysium 	0.32 	A$ 13.98 	43.1h 	91.40%
+		Yakuza 0 	- 	No Price 	41.6h 	93.89%
+		Super Meat Boy 	0.04 	A$ 1.72 	39.0h 	92.44%
+		Team Fortress 2 	- 	Free 	38.8h 	90.33%
+		Dota 2 	- 	Free 	37.8h 	80.44%
+		Yakuza Kiwami 2 (Legacy) 	- 	No Price 	35.7h 	92.47%
+		Void Stranger 	0.51 	A$ 17.75 	34.9h 	87.74%
+		DARK SOULS™ II: Scholar of the First Sin 	1.68 	A$ 56.95 	34.0h 	82.95%
+		Danganronpa 2: Goodbye Despair 	0.89 	A$ 28.95 	32.4h 	93.80%
+		FEZ 	0.48 	A$ 14.50 	29.9h 	90.34%
+		Baldur's Gate 3 	3.06 	A$ 89.95 	29.4h 	96.03%
+		DARK SOULS™ II 	1.99 	A$ 56.95 	28.7h 	86.67%
+		Yakuza Kiwami (Legacy) 	- 	No Price 	28.2h 	90.95%
+		Mewgenics 	1.58 	A$ 43.95 	27.9h 	89.73%
+		Spelunky 	0.78 	A$ 21.50 	27.5h 	89.86%
+		The Witness 	2.18 	A$ 56.95 	26.1h 	82.78%
+		Deadly Premonition: The Director's Cut 	1.47 	A$ 35.95 	24.5h 	64.68%
+		OMORI 	1.19 	A$ 28.95 	24.3h 	95.56%
+		The Talos Principle 	1.83 	A$ 43.95 	24.0h 	93.35%
+		Persona 5 Royal 	4.12 	A$ 94.95 	23.0h 	95.07%
+		Sid Meier's Civilization V 	1.40 	A$ 29.95 	21.4h 	94.45%
+		Blue Prince 	1.32 	A$ 26.37 	20.0h 	84.65%
+		Dustforce 	0.77 	A$ 14.50 	18.9h 	84.21%
+		Risk of Rain (2013) 	0.16 	A$ 2.90 	17.7h 	91.11%
+		Killing Floor 	1.68 	A$ 28.95 	17.3h 	93.31%
+		Slay the Spire 	2.25 	A$ 36.99 	16.5h 	96.04%
+		Hades II 	2.67 	A$ 43.95 	16.5h 	94.35%
+		BioShock Infinite 	0.62 	A$ 9.98 	16.1h 	92.26%
+		The Walking Dead: Season Two 	1.37 	A$ 21.95 	16.1h 	94.56%
+		Return of the Obra Dinn 	1.11 	A$ 17.70 	16.0h 	94.69%
+		GUILTY GEAR -STRIVE- 	3.60 	A$ 56.99 	15.9h 	86.66%
+		Riven (1997) 	0.55 	A$ 8.50 	15.3h 	84.90%
+		Life is Strange™ 	- 	Free 	15.2h 	95.01%
+		Batman: Arkham City GOTY 	1.97 	A$ 28.95 	14.7h 	94.60%
+		Hypnospace Outlaw 	2.03 	A$ 28.95 	14.3h 	93.25%
+		Rogue Legacy 	1.62 	A$ 21.95 	13.6h 	90.28%
+		Sekiro™: Shadows Die Twice 	6.70 	A$ 89.95 	13.4h 	94.30%
+		The Talos Principle 2 	3.35 	A$ 43.95 	13.1h 	92.47%
+		The Walking Dead 	1.69 	A$ 21.95 	13.0h 	95.74%
+		Neon White 	1.14 	A$ 14.60 	12.8h 	95.55%
+		Balatro 	1.75 	A$ 21.95 	12.6h 	96.65%
+		BIT.TRIP RUNNER 	1.22 	A$ 14.50 	11.9h 	82.73%
+		Inscryption 	2.44 	A$ 28.95 	11.9h 	95.54%
+		MultiVersus 	- 	No Price 	11.8h 	75.34%
+		Dream Quest 	1.31 	A$ 14.50 	11.0h 	82.59%
+		Risk of Rain 2 	1.19 	A$ 11.86 	10.0h 	92.85%
+		Bastion 	2.22 	A$ 21.95 	9.9h 	93.39%
+		Memoria 	3.06 	A$ 29.95 	9.8h 	85.61%
+		Obduction 	4.38 	A$ 41.95 	9.6h 	77.34%
+		Baba Is You 	1.62 	A$ 15.05 	9.3h 	95.45%
+		Fallout 4 	2.72 	A$ 24.95 	9.2h 	80.54%
+		realMyst: Masterpiece Edition 	2.78 	A$ 25.50 	9.2h 	84.81%
+		Hotline Miami 2: Wrong Number 	- 	No Price 	9.1h 	92.71%
+		Antichamber 	2.87 	A$ 24.95 	8.7h 	92.74%
+		NieR:Automata™ 	5.54 	A$ 47.50 	8.6h 	86.35%
+		Deus Ex: Human Revolution 	- 	Not in Store 	8.4h 	-
+		Wildfrost 	3.54 	A$ 29.50 	8.3h 	80.64%
+		Clair Obscur: Expedition 33 	8.84 	A$ 69.95 	7.9h 	94.34%
+		Undertale 	1.85 	A$ 14.50 	7.8h 	95.48%
+		Papers, Please 	1.90 	A$ 14.50 	7.6h 	95.72%
+		BELOW 	1.43 	A$ 10.78 	7.6h 	68.19%
+		Amnesia: The Dark Descent 	0.98 	A$ 7.37 	7.5h 	92.68%
+		Titanfall® 2 	5.34 	A$ 39.95 	7.5h 	94.56%
+		FAITH 	2.67 	A$ 19.99 	7.5h 	92.06%
+		Middle-earth™: Shadow of Mordor™ 	0.83 	A$ 5.99 	7.2h 	91.15%
+		Glittermitten Grove 	2.02 	A$ 14.50 	7.2h 	77.48%
+		UFO 50 	5.15 	A$ 36.50 	7.1h 	92.14%
+		Fidel Dungeon Rescue 	1.07 	A$ 7.25 	6.8h 	86.76%
+		Rain World 	2.45 	A$ 16.42 	6.7h 	92.40%
+		The Swapper 	0.49 	A$ 3.22 	6.5h 	91.11%
+		Counter-Strike: Source 	2.27 	A$ 14.50 	6.4h 	95.10%
+		Phasmophobia 	4.77 	A$ 29.50 	6.2h 	93.83%
+		Indie Game: The Movie 	2.37 	A$ 14.50 	6.1h 	87.80%
+		Celeste 	1.22 	A$ 7.37 	6.1h 	96.09%
+		Magicka 	2.47 	A$ 14.50 	5.9h 	83.86%
+		No Umbrellas Allowed 	5.01 	A$ 28.95 	5.8h 	77.59%
+		Yume Nikki 	- 	No Price 	5.8h 	91.47%
+		Metro: Last Light Complete Edition 	- 	Not in Store 	5.7h 	-
+		Stardew Valley 	3.11 	A$ 16.99 	5.5h 	97.72%
+		RUSH 	0.22 	A$ 1.20 	5.4h 	85.17%
+		SIGNALIS 	5.72 	A$ 29.95 	5.2h 	94.63%
+		DEATH STRANDING 	- 	No Price 	5.1h 	91.76%
+		SOMA 	8.70 	A$ 43.95 	5.1h 	94.13%
+		Strange Horticulture 	1.59 	A$ 7.99 	5.0h 	92.10%
+		The Swords of Ditto: Mormo's Curse 	4.38 	A$ 21.95 	5.0h 	62.09%
+		Human Resource Machine 	2.19 	A$ 10.97 	5.0h 	90.43%
+		Fear & Hunger 	2.32 	A$ 11.50 	5.0h 	92.05%
+		Dust: An Elysian Tail 	4.33 	A$ 21.50 	5.0h 	92.84%
+		Psychonauts 	2.96 	A$ 14.50 	4.9h 	92.63%
+		Cave Story+ 	4.64 	A$ 21.50 	4.6h 	90.05%
+		Lethal Company 	3.14 	A$ 14.50 	4.6h 	96.11%
+		Mr Shifty 	4.81 	A$ 21.95 	4.6h 	84.17%
+		Monaco 	4.71 	A$ 21.50 	4.6h 	87.92%
+		Into the Breach 	1.68 	A$ 7.52 	4.5h 	92.08%
+		Little Inferno 	3.28 	A$ 14.70 	4.5h 	92.33%
+		Phantom Abyss 	6.70 	A$ 29.50 	4.4h 	78.25%
+		Road Not Taken 	4.99 	A$ 21.95 	4.4h 	75.30%
+		Wanderstop 	5.07 	A$ 21.90 	4.3h 	88.90%
+		BattleBlock Theater 	5.00 	A$ 21.50 	4.3h 	95.57%
+		Look Outside 	3.50 	A$ 14.99 	4.3h 	95.61%
+		Dishonored 2 	9.59 	A$ 39.95 	4.2h 	88.22%
+		SHENZHEN I/O 	2.64 	A$ 10.97 	4.2h 	91.30%
+		Mini Motorways 	3.52 	A$ 14.50 	4.1h 	94.06%
+		Cult of the Lamb 	8.77 	A$ 35.95 	4.1h 	94.51%
+		Hyper Light Drifter 	7.33 	A$ 28.95 	4.0h 	90.74%
+		Kentucky Route Zero 	9.18 	A$ 35.95 	3.9h 	77.68%
+		Hotline Miami 	3.73 	A$ 14.50 	3.9h 	95.60%
+		Katana ZERO 	5.73 	A$ 21.95 	3.8h 	96.32%
+		Event[0] 	8.12 	A$ 28.95 	3.6h 	77.40%
+		PUBG: BATTLEGROUNDS 	- 	Free 	3.6h 	60.23%
+		Unpacking 	3.32 	A$ 11.58 	3.5h 	91.45%
+		Mirror's Edge 	8.81 	A$ 29.95 	3.4h 	86.14%
+		Subnautica 	13.29 	A$ 44.95 	3.4h 	96.08%
+		LIMBO 	0.52 	A$ 1.75 	3.4h 	90.76%
+		INSIDE 	1.07 	A$ 3.50 	3.3h 	95.38%
+		Proteus 	4.42 	A$ 14.50 	3.3h 	73.71%
+		The Wolf Among Us 	7.10 	A$ 22.95 	3.2h 	95.89%
+		Thomas Was Alone 	4.51 	A$ 14.50 	3.2h 	90.89%
+		Starseed Pilgrim 	2.74 	A$ 8.50 	3.1h 	59.03%
+		WORLD OF HORROR 	10.00 	A$ 29.50 	3.0h 	87.31%
+		Mouthwashing 	6.46 	A$ 18.95 	2.9h 	93.46%
+		Don't Starve Together 	7.37 	A$ 21.50 	2.9h 	94.18%
+		FTL: Faster Than Light 	2.02 	A$ 5.80 	2.9h 	93.61%
+		140 	2.63 	A$ 7.50 	2.9h 	89.17%
+		RiME 	14.10 	A$ 39.95 	2.8h 	87.17%
+		Power Rangers: Battle for the Grid 	10.47 	A$ 29.50 	2.8h 	77.48%
+		Guacamelee! Gold Edition 	7.57 	A$ 20.95 	2.8h 	89.99%
+		Night in the Woods 	10.86 	A$ 29.50 	2.7h 	92.03%
+		Gone Home 	1.33 	A$ 3.29 	2.5h 	75.73%
+		Tormentor❌Punisher 	1.92 	A$ 4.71 	2.5h 	82.16%
+		BIT.TRIP BEAT 	6.17 	A$ 14.50 	2.4h 	76.60%
+		Splitgate 	- 	Free 	2.3h 	90.15%
+		Cart Life 	- 	Not in Store 	2.3h 	-
+		Ib 	8.16 	A$ 18.50 	2.3h 	95.23%
+		The Stanley Parable 	9.68 	A$ 21.95 	2.3h 	90.78%
+		The Basement Collection 	2.63 	A$ 5.95 	2.3h 	83.04%
+		Red Dead Redemption 2 	39.98 	A$ 89.95 	2.3h 	91.67%
+		Heave Ho 	6.49 	A$ 14.50 	2.2h 	87.51%
+		Terraria 	6.64 	A$ 14.50 	2.2h 	96.74%
+		Hacknet 	6.69 	A$ 14.50 	2.2h 	91.51%
+		APE OUT 	10.21 	A$ 21.95 	2.2h 	91.08%
+		Owlboy 	13.72 	A$ 29.50 	2.2h 	81.17%
+		TumbleSeed 	10.08 	A$ 21.50 	2.1h 	71.91%
+		Windbound 	14.15 	A$ 29.95 	2.1h 	58.20%
+		Eidolon 	10.16 	A$ 21.50 	2.1h 	59.20%
+		Shovel Knight: Treasure Trove 	27.56 	A$ 56.95 	2.1h 	93.17%
+		Kingdom: Classic 	- 	Free 	2.0h 	88.67%
+		Hollow Knight 	10.98 	A$ 21.95 	2.0h 	96.03%
+		Wilmot's Warehouse 	11.07 	A$ 21.95 	2.0h 	89.68%
+		ZERO PARADES: For Dead Spies 	28.45 	A$ 55.95 	2.0h 	77.69%
+		PHOGS! 	3.35 	A$ 6.59 	2.0h 	75.53%
+		Mark of the Ninja 	- 	No Price 	1.9h 	94.46%
+		Counter-Strike 2 	- 	Free 	1.9h 	85.85%
+		Nuclear Throne 	9.08 	A$ 16.95 	1.9h 	93.71%
+		Tower of Fire: The Sword of Unspoken Misc 	5.48 	A$ 9.77 	1.8h 	72.42%
+		Öoo 	6.15 	A$ 10.87 	1.8h 	95.76%
+		Detention 	9.78 	A$ 16.95 	1.7h 	80.63%
+		Darkest Dungeon® 	3.28 	A$ 5.47 	1.7h 	90.55%
+		Mask Quest 	8.88 	A$ 14.50 	1.6h 	81.95%
+		Sorry We're Closed 	17.29 	A$ 27.37 	1.6h 	92.79%
+		Golf With Your Friends 	13.72 	A$ 21.50 	1.6h 	86.22%
+		Project Zomboid 	18.83 	A$ 29.50 	1.6h 	93.16%
+		Her Story 	9.46 	A$ 14.50 	1.5h 	86.95%
+		Jazzpunk: Director's Cut 	14.18 	A$ 21.50 	1.5h 	90.75%
+		1000xRESIST 	20.82 	A$ 29.50 	1.4h 	91.52%
+		MirrorMoon EP 	2.35 	A$ 3.29 	1.4h 	57.26%
+		White Knuckle Demo 	- 	Demo 	1.4h 	93.37%
+		Amnesia: The Bunker 	27.72 	A$ 36.50 	1.3h 	90.76%
+		TopplePOP: Bungee Blockbusters 	16.67 	A$ 21.95 	1.3h 	81.30%
+		NEEDY GIRL OVERDOSE 	17.65 	A$ 22.95 	1.3h 	92.75%
+		Consume Me 	17.33 	A$ 21.95 	1.3h 	86.95%
+		Crocotile 3D 	29.71 	A$ 35.16 	1.2h 	82.40%
+		Peggle Deluxe 	6.72 	A$ 7.95 	1.2h 	94.91%
+		Ittle Dew 2+ 	26.42 	A$ 29.50 	1.1h 	80.27%
+		The Looker 	- 	Free 	1.1h 	94.50%
+		Pony Island 	6.82 	A$ 7.50 	1.1h 	92.64%
+		Defense Grid: The Awakening 	13.18 	A$ 14.50 	1.1h 	92.67%
+		Super Time Force Ultra 	20.16 	A$ 21.50 	1.1h 	84.37%
+		A Short Hike 	10.95 	A$ 11.50 	1.1h 	96.74%
+		Milk outside a bag of milk outside a bag of milk 	12.53 	A$ 12.95 	1.0h 	94.35%
+		Teardown 	44.95 	A$ 44.95 	1.0h 	94.51%
+		Content Warning 	7.40 	A$ 7.40 	59m 	92.83%
+		Cibele 	13.19 	A$ 13.19 	59m 	50.80%
+		Deus Ex: Mankind Divided™ 	4.49 	A$ 4.49 	56m 	75.30%
+		Zeno Clash 	12.50 	A$ 12.50 	56m 	83.18%
+		Dear Esther 	- 	No Price 	55m 	73.95%
+		Quantum Conundrum 	12.95 	A$ 12.95 	55m 	81.21%
+		Rocket League 	- 	No Price 	54m 	86.35%
+		868-HACK 	4.80 	A$ 4.80 	53m 	81.74%
+		The Unfinished Swan 	5.62 	A$ 5.62 	47m 	80.20%
+		Frog Fractions: Game of the Decade Edition 	- 	Free 	46m 	90.42%
+		BABBDI 	- 	Free 	45m 	94.37%
+		FINAL FANTASY VII (2013) 	- 	No Price 	45m 	90.88%
+		The Swindle 	21.50 	A$ 21.50 	44m 	62.25%
+		Don't Starve 	14.50 	A$ 14.50 	40m 	95.17%
+		Tales of Vesperia: Definitive Edition 	56.95 	A$ 56.95 	38m 	78.89%
+		Neverway Prologue 	- 	Demo 	37m 	-
+		Book of Hours 	36.50 	A$ 36.50 	37m 	82.13%
+		The Wonderful End of the World 	14.50 	A$ 14.50 	37m 	74.87%
+		Esoteric Ebb 	29.20 	A$ 29.20 	36m 	92.51%
+		moon 	26.95 	A$ 26.95 	36m 	86.49%
+		Heroine's Quest: The Herald of Ragnarok 	- 	Free 	35m 	83.72%
+		La-Mulana 	21.50 	A$ 21.50 	35m 	76.83%
+		Cloud Gardens 	25.95 	A$ 25.95 	34m 	90.64%
+		HELLDIVERS™ 2 	59.95 	A$ 59.95 	34m 	74.70%
+		Helltaker 	- 	Free 	33m 	96.32%
+		ULTRAKILL 	39.99 	A$ 39.99 	33m 	96.26%
+		Dead Island 	- 	Not in Store 	33m 	-
+		Placid Plastic Duck Simulator 	3.25 	A$ 3.25 	32m 	95.18%
+		Nova Drift 	26.50 	A$ 26.50 	31m 	93.14%
+		Aimlabs 	- 	Free 	31m 	90.14%
+		Spin Rhythm XD 	24.99 	A$ 24.99 	30m 	93.19%
+		Reigns 	4.50 	A$ 4.50 	30m 	84.54%
+		Peglin 	29.50 	A$ 29.50 	29m 	81.95%
+		Jamestown 	14.50 	A$ 14.50 	28m 	89.81%
+		Shipwrecked 64 	11.79 	A$ 11.79 	27m 	91.20%
+		Oeuf 	14.50 	A$ 14.50 	26m 	85.61%
+		Kero Blaster 	14.50 	A$ 14.50 	26m 	89.14%
+		LISA 	31.59 	A$ 31.59 	25m 	92.95%
+		Darkwood 	3.99 	A$ 3.99 	25m 	92.78%
+		Warden: Melody of the Undergrowth 	9.98 	A$ 9.98 	24m 	68.91%
+		Tartaros Demo 	- 	Demo 	23m 	56.05%
+		Crab Game 	- 	Free 	23m 	90.24%
+		The Gardens Between 	24.99 	A$ 24.99 	23m 	89.69%
+		The Moonstone Equation 	14.50 	A$ 14.50 	23m 	65.51%
+		We Know the Devil 	9.95 	A$ 9.95 	23m 	89.14%
+		Urban Myth Dissolution Center 	26.50 	A$ 26.50 	22m 	85.35%
+		D4: Dark Dreams Don't Die 	21.50 	A$ 21.50 	21m 	77.38%
+		Half-Life 2 	14.50 	A$ 14.50 	21m 	96.51%
+		Eternal Card Game 	- 	Free 	20m 	75.09%
+		Magic: The Gathering Arena 	- 	Free 	19m 	60.78%
+		Enter the Gungeon 	21.95 	A$ 21.95 	19m 	93.75%
+		SpaceChem 	7.25 	A$ 7.25 	18m 	88.93%
+		Toki Tori 	1.20 	A$ 1.20 	18m 	84.09%
+		Portal 	14.50 	A$ 14.50 	18m 	97.28%
+		Milk inside a bag of milk inside a bag of milk 	1.10 	A$ 1.10 	17m 	94.46%
+		Spiral Knights 	- 	Free 	17m 	82.16%
+		1... 2... 3... KICK IT! (Drop That Beat Like an Ugly Baby) 	- 	No Price 	17m 	30.74%
+		How Fish Is Made 	- 	Free 	16m 	91.72%
+		Easy Pose 	13.87 	A$ 13.87 	16m 	86.48%
+		Kairo 	7.50 	A$ 7.50 	16m 	71.02%
+		Capsized 	14.50 	A$ 14.50 	16m 	72.72%
+		Rock of Ages 	14.50 	A$ 14.50 	16m 	88.56%
+		Leap Year 	6.00 	A$ 6.00 	15m 	92.77%
+		AI: The Somnium Files 	29.50 	A$ 29.50 	15m 	88.95%
+		BioShock Remastered 	4.98 	A$ 4.98 	15m 	81.74%
+		English Country Tune 	3.75 	A$ 3.75 	15m 	75.78%
+		Tiny and Big: Grandpa's Leftovers 	17.75 	A$ 17.75 	15m 	88.21%
+		NightSky 	14.50 	A$ 14.50 	15m 	83.85%
+		Dead Cells 	35.95 	A$ 35.95 	13m 	95.82%
+		Endoparasitic 	14.50 	A$ 14.50 	12m 	89.92%
+		Catlateral Damage 	14.50 	A$ 14.50 	11m 	84.86%
+		Braid 	21.50 	A$ 21.50 	11m 	90.51%
+		Before Your Eyes 	14.50 	A$ 14.50 	10m 	95.64%
+		Still There 	21.95 	A$ 21.95 	10m 	81.90%
+		Brutal Orchestra 	28.99 	A$ 28.99 	9m 	93.04%
+		Steambirds Alliance 	- 	No Price 	9m 	72.91%
+		Gunpoint 	3.62 	A$ 3.62 	9m 	94.81%
+		Sins of a Solar Empire: Trinity 	13.95 	A$ 13.95 	9m 	73.73%
+		A Virus Named TOM 	14.50 	A$ 14.50 	7m 	54.95%
+		Closure 	14.50 	A$ 14.50 	7m 	80.95%
+		Corpse Party (2021) 	14.97 	A$ 14.97 	6m 	86.06%
+		Half-Life: Source 	14.50 	A$ 14.50 	6m 	67.66%
+		Crusader Kings III 	69.95 	A$ 69.95 	5m 	88.64%
+		See No Evil 	1.50 	A$ 1.50 	5m 	68.75%
+		The House in Fata Morgana 	35.95 	A$ 35.95 	5m 	91.67%
+		Flat Heroes 	9.34 	A$ 9.34 	4m 	84.09%
+		Sunless Sea 	26.95 	A$ 26.95 	4m 	80.96%
+		TRI: Of Friendship and Madness 	21.95 	A$ 21.95 	3m 	79.45%
+		Jet Set Radio 	- 	No Price 	3m 	84.89%
+		AaAaAA!!! - A Reckless Disregard for Gravity 	14.50 	A$ 14.50 	3m 	79.41%
+		WEBFISHING 	7.50 	A$ 7.50 	2m 	95.77%
+		Cogs 	8.50 	A$ 8.50 	2m 	83.40%
+		HeatStroke 	2.95 	A$ 2.95 	1m 	82.87%
+		FINAL FANTASY VII 	- 	A$ 17.95 	- 	62.32%
+		Yakuza Kiwami 2 	- 	A$ 24.95 	- 	74.68%
+		Feed the Deep 	- 	A$ 9.99 	- 	82.86%
+		Linelith 	- 	A$ 2.70 	- 	93.05%
+		HITMAN World of Assassination 	- 	A$ 43.95 	- 	85.75%
+		Deepest Chamber: Resurrection 	- 	A$ 18.50 	- 	75.77%
+		Deadlock 	- 	No Price 	- 	-
+		Tormented Souls 	- 	A$ 29.50 	- 	87.37%
+		Spiritfarer®: Farewell Edition 	- 	A$ 43.95 	- 	93.26%
+		Later Alligator 	- 	A$ 25.95 	- 	91.94%
+		Catherine Classic 	- 	A$ 24.95 	- 	84.97%
+		Void Bastards 	- 	A$ 42.95 	- 	83.12%
+		The Stillness of the Wind 	- 	A$ 18.95 	- 	72.29%
+		Kingdom Two Crowns 	- 	A$ 7.37 	- 	88.57%
+		Shape of the World 	- 	A$ 1.85 	- 	73.46%
+		Dishonored®: Death of the Outsider™ 	- 	A$ 39.95 	- 	85.44%
+		Future Unfolding 	- 	A$ 28.95 	- 	75.53%
+		Wandersong 	- 	A$ 28.95 	- 	91.25%
+		Dear Esther: Landmark Edition 	- 	A$ 14.50 	- 	72.95%
+		Quest for Glory Collection 	- 	A$ 15.95 	- 	88.17%
+		Police Quest Collection 	- 	A$ 15.95 	- 	68.54%
+		Putty Pals 	- 	A$ 14.50 	- 	84.62%
+		VA-11 Hall-A: Cyberpunk Bartender Action 	- 	A$ 21.50 	- 	95.34%
+		ARCADE GAME SERIES: DIG DUG 	- 	A$ 5.75 	- 	83.78%
+		Downwell 	- 	A$ 4.50 	- 	93.49%
+		Home Improvisation: Furniture Sandbox 	- 	A$ 14.50 	- 	64.84%
+		Stephen's Sausage Roll 	- 	A$ 21.97 	- 	90.62%
+		Reflections 	- 	A$ 14.50 	- 	48.61%
+		King's Quest 	- 	Free 	- 	86.61%
+		Feist 	- 	A$ 14.50 	- 	70.76%
+		The Warlock of Firetop Mountain 	- 	A$ 29.50 	- 	71.10%
+		Duck Game 	- 	A$ 18.50 	- 	94.65%
+		6180 the moon 	- 	A$ 5.95 	- 	84.88%
+		Heavy Bullets 	- 	A$ 14.50 	- 	78.31%
+		The Floor is Jelly 	- 	A$ 14.50 	- 	78.43%
+		Guacamelee! Super Turbo Championship Edition 	- 	A$ 20.95 	- 	89.44%
+		Year Walk 	- 	A$ 8.79 	- 	86.26%
+		A Hat in Time 	- 	A$ 43.95 	- 	96.02%
+		Skullgirls 2nd Encore 	- 	A$ 35.95 	- 	72.09%
+		Rayman Legends 	- 	A$ 29.95 	- 	87.41%
+		Transistor 	- 	A$ 29.50 	- 	92.01%
+		Brothers - A Tale of Two Sons 	- 	A$ 21.50 	- 	92.59%
+		Intrusion 2 	- 	A$ 13.50 	- 	85.90%
+		South Park™: The Stick of Truth™ 	- 	A$ 11.23 	- 	95.93%
+		Offspring Fling! 	- 	No Price 	- 	77.46%
+		Fieldrunners 	- 	A$ 7.50 	- 	63.48%
+		Hell Yeah! 	- 	A$ 18.99 	- 	82.33%
+		Awesomenauts 	- 	A$ 16.22 	- 	82.95%
+		Sleeping Dogs™ 	- 	No Price 	- 	92.08%
+		Oil Rush 	- 	Free 	- 	57.13%
+		Steel Storm: Burning Retribution 	- 	A$ 21.50 	- 	58.54%
+		Revenge of the Titans 	- 	A$ 21.95 	- 	77.99%
+		VVVVVV 	- 	A$ 7.50 	- 	93.37%
+		Critter Crunch 	- 	A$ 9.95 	- 	86.84%
+		Atom Zombie Smasher 	- 	A$ 14.50 	- 	85.70%
+		Metro 2033 	- 	No Price 	- 	90.79%
+		Gratuitous Space Battles 	- 	A$ 21.95 	- 	67.74%
+		Hammerfight 	- 	Free 	- 	70.64%
+		Mafia 	- 	A$ 19.99 	- 	85.45%
+		Machinarium 	- 	A$ 4.49 	- 	92.83%
+		The Ball 	- 	A$ 14.50 	- 	71.37%
+		Killing Floor Mod: Defence Alliance 2 	- 	No Price 	- 	39.55%
+		SEGA Mega Drive & Genesis Classics 	- 	No Price 	- 	77.67%
+		Osmos 	- 	A$ 14.50 	- 	82.00%
+		Crayon Physics Deluxe 	- 	A$ 28.95 	- 	81.76%
+		Aquaria 	- 	A$ 14.50 	- 	84.00%
+		And Yet It Moves 	- 	A$ 13.95 	- 	67.89%
+		Audiosurf 	- 	A$ 14.50 	- 	92.93%
+		Space Quest Collection 	- 	No Price 	- 	79.18%
+		King's Quest Collection 	- 	No Price 	- 	81.35%
+		BioShock 	- 	A$ 4.98 	- 	92.06%
+		Shank 	- 	A$ 14.50 	- 	87.00%
+		Garry's Mod 	- 	A$ 14.50 	- 	96.18%
+		Multiwinia 	- 	A$ 17.75 	- 	77.14%
+		DEFCON Beta Demo 	- 	Demo 	- 	-
+		DEFCON 	- 	A$ 17.75 	- 	84.39%
+		Uplink 	- 	A$ 17.75 	- 	86.90%
+		Darwinia 	- 	A$ 17.75 	- 	76.63%
+		Left 4 Dead 2 	- 	A$ 14.50 	- 	96.79%
+		Half-Life Deathmatch: Source 	- 	A$ 14.50 	- 	73.61%
+		Half-Life 2: Deathmatch 	- 	No Price 	- 	88.53%
+		Counter-Strike: Condition Zero Deleted Scenes 	- 	Not in Store 	- 	-
+		Counter-Strike: Condition Zero 	- 	A$ 14.50 	- 	89.55%
+		Counter-Strike 	- 	A$ 14.50 	- 	96.30%

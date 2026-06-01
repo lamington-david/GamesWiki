@@ -1,0 +1,53 @@
+---
+interface Props {
+  title: string;
+  developer: string;
+  year: number;
+  genres: string[];
+  playtime: number;
+  steam_rating: number;
+  resourceCount: number;
+  slug: string;
+  design_tags: string[];
+}
+
+const { title, developer, year, genres, playtime, steam_rating, resourceCount, slug, design_tags } = Astro.props;
+
+const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e635' : steam_rating >= 80 ? '#facc15' : '#f87171';
+---
+
+<a
+  href={`/games/${slug}`}
+  style="display: block; background-color: #0f172a; border: 1px solid #1e293b; border-radius: 0.625rem; padding: 1.25rem; text-decoration: none; color: inherit; transition: border-color 0.15s, background-color 0.15s;"
+  onmouseover="this.style.borderColor='#334155'; this.style.backgroundColor='#131f35'"
+  onmouseout="this.style.borderColor='#1e293b'; this.style.backgroundColor='#0f172a'"
+>
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.625rem;">
+    <div style="flex: 1; min-width: 0;">
+      <h3 style="font-size: 0.9375rem; font-weight: 600; color: #f1f5f9; line-height: 1.3; margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+        {title}
+      </h3>
+      <p style="font-size: 0.75rem; color: #64748b;">{developer} · {year}</p>
+    </div>
+    <div style={`font-size: 0.75rem; font-weight: 700; color: ${ratingColor}; margin-left: 0.75rem; white-space: nowrap;`}>
+      {steam_rating.toFixed(0)}%
+    </div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.75rem;">
+    {genres.slice(0, 3).map((g) => (
+      <span style="display: inline-flex; align-items: center; padding: 0.1rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 500; background-color: #1e293b; color: #94a3b8; border: 1px solid #334155;">
+        {g}
+      </span>
+    ))}
+  </div>
+
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span style="font-size: 0.75rem; color: #475569;">{playtime}h played</span>
+    {resourceCount > 0 ? (
+      <span style="font-size: 0.75rem; color: #6366f1; font-weight: 500;">{resourceCount} resource{resourceCount !== 1 ? 's' : ''}</span>
+    ) : (
+      <span style="font-size: 0.75rem; color: #374151;">No resources yet</span>
+    )}
+  </div>
+</a>

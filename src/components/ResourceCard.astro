@@ -1,0 +1,69 @@
+---
+interface Resource {
+  type: string;
+  title: string;
+  speaker?: string;
+  author?: string;
+  source: string;
+  year?: number;
+  summary: string;
+  url: string;
+}
+
+interface Props {
+  resource: Resource;
+}
+
+const { resource } = Astro.props;
+
+const typeConfig: Record<string, { label: string; color: string; bg: string; border: string }> = {
+  gdc_talk:    { label: 'GDC Talk',    color: '#c4b5fd', bg: 'rgba(88,28,135,0.25)',  border: 'rgba(109,40,217,0.4)' },
+  interview:   { label: 'Interview',   color: '#93c5fd', bg: 'rgba(29,78,216,0.25)',  border: 'rgba(37,99,235,0.4)' },
+  article:     { label: 'Article',     color: '#6ee7b7', bg: 'rgba(5,150,105,0.25)',  border: 'rgba(16,185,129,0.4)' },
+  postmortem:  { label: 'Postmortem',  color: '#fcd34d', bg: 'rgba(146,64,14,0.25)', border: 'rgba(217,119,6,0.4)' },
+  video:       { label: 'Video',       color: '#fca5a5', bg: 'rgba(185,28,28,0.25)', border: 'rgba(220,38,38,0.4)' },
+  documentary: { label: 'Documentary', color: '#fdba74', bg: 'rgba(154,52,18,0.25)', border: 'rgba(234,88,12,0.4)' },
+  podcast:     { label: 'Podcast',     color: '#f9a8d4', bg: 'rgba(157,23,77,0.25)', border: 'rgba(219,39,119,0.4)' },
+};
+
+const config = typeConfig[resource.type] || { label: resource.type, color: '#9ca3af', bg: 'rgba(55,65,81,0.3)', border: 'rgba(75,85,99,0.5)' };
+const credit = resource.speaker || resource.author;
+---
+
+<a
+  href={resource.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={`display: block; background-color: #111827; border: 1px solid #1f2937; border-radius: 0.5rem; padding: 1rem; text-decoration: none; color: inherit; transition: border-color 0.15s; cursor: pointer;`}
+  onmouseover="this.style.borderColor='#374151'"
+  onmouseout="this.style.borderColor='#1f2937'"
+>
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.5rem;">
+    <span style={`display: inline-flex; align-items: center; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 500; background-color: ${config.bg}; color: ${config.color}; border: 1px solid ${config.border}; white-space: nowrap;`}>
+      {config.label}
+    </span>
+    {resource.year && (
+      <span style="font-size: 0.75rem; color: #6b7280; white-space: nowrap;">{resource.year}</span>
+    )}
+  </div>
+
+  <h3 style="font-size: 0.9375rem; font-weight: 600; color: #f1f5f9; margin-bottom: 0.25rem; line-height: 1.4;">
+    {resource.title}
+  </h3>
+
+  {credit && (
+    <p style="font-size: 0.8125rem; color: #9ca3af; margin-bottom: 0.5rem;">
+      {credit} · {resource.source}
+    </p>
+  )}
+  {!credit && (
+    <p style="font-size: 0.8125rem; color: #6b7280; margin-bottom: 0.5rem;">{resource.source}</p>
+  )}
+
+  <p style="font-size: 0.8125rem; color: #d1d5db; line-height: 1.6;">{resource.summary}</p>
+
+  <div style="margin-top: 0.75rem; font-size: 0.75rem; color: #6b7280; display: flex; align-items: center; gap: 0.25rem;">
+    <span>↗</span>
+    <span>{resource.url.replace(/^https?:\/\//, '').split('/')[0]}</span>
+  </div>
+</a>

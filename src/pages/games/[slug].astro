@@ -1,0 +1,124 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ResourceCard from '../../components/ResourceCard.astro';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games');
+  return games.map(game => ({ params: { slug: game.id }, props: { game } }));
+}
+
+const { game } = Astro.props;
+const { Content } = await render(game);
+
+const { title, developer, publisher, year, genres, playtime, steam_rating, description, resources, design_tags } = game.data;
+
+const grouped = {
+  gdc_talk:    resources.filter(r => r.type === 'gdc_talk'),
+  interview:   resources.filter(r => r.type === 'interview'),
+  postmortem:  resources.filter(r => r.type === 'postmortem'),
+  article:     resources.filter(r => r.type === 'article'),
+  video:       resources.filter(r => r.type === 'video'),
+  documentary: resources.filter(r => r.type === 'documentary'),
+  podcast:     resources.filter(r => r.type === 'podcast'),
+};
+
+const sectionLabels: Record<string, string> = {
+  gdc_talk: 'GDC Talks',
+  interview: 'Interviews',
+  postmortem: 'Postmortems',
+  article: 'Articles & Essays',
+  video: 'Videos',
+  documentary: 'Documentaries',
+  podcast: 'Podcasts',
+};
+
+const ratingColor = steam_rating >= 95 ? '#4ade80' : steam_rating >= 90 ? '#a3e635' : steam_rating >= 80 ? '#facc15' : '#f87171';
+---
+
+<BaseLayout title={`${title} — GamesWiki`} description={description}>
+  <div style="max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem;">
+
+    <!-- Back -->
+    <a href="/" style="display: inline-flex; align-items: center; gap: 0.375rem; font-size: 0.8125rem; color: #64748b; text-decoration: none; margin-bottom: 2rem; transition: color 0.15s;"
+       onmouseover="this.style.color='#94a3b8'" onmouseout="this.style.color='#64748b'">
+      ← All Games
+    </a>
+
+    <!-- Game Header -->
+    <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #1e293b;">
+      <div style="display: flex; flex-wrap: wrap; gap: 0.375rem; margin-bottom: 0.875rem;">
+        {genres.map(g => (
+          <span style="display: inline-flex; align-items: center; padding: 0.15rem 0.625rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; background-color: #1e293b; color: #94a3b8; border: 1px solid #334155;">
+            {g}
+          </span>
+        ))}
+      </div>
+
+      <h1 style="font-size: 2rem; font-weight: 800; color: #f1f5f9; letter-spacing: -0.04em; margin-bottom: 0.375rem;">
+        {title}
+      </h1>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; margin-bottom: 1rem;">
+        <span style="font-size: 0.875rem; color: #64748b;">{developer}{publisher && publisher !== developer ? ` · Published by ${publisher}` : ''} · {year}</span>
+        <span style={`font-size: 0.875rem; font-weight: 600; color: ${ratingColor};`}>{steam_rating.toFixed(1)}% Steam Rating</span>
+        <span style="font-size: 0.875rem; color: #64748b;">{playtime}h played</span>
+      </div>
+
+      <p style="font-size: 0.9375rem; color: #94a3b8; line-height: 1.7; max-width: 680px;">{description}</p>
+
+      {design_tags.length > 0 && (
+        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.375rem; align-items: center;">
+          <span style="font-size: 0.75rem; color: #475569;">Design focus:</span>
+          {design_tags.map(tag => (
+            <span style="display: inline-flex; align-items: center; padding: 0.15rem 0.625rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 500; background-color: rgba(79,70,229,0.15); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3);">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <!-- Resources by section -->
+    {resources.length === 0 && (
+      <div style="text-align: center; padding: 3rem 0; color: #374151; border: 1px dashed #1e293b; border-radius: 0.5rem;">
+        <p style="font-size: 0.9375rem;">No resources yet for this game.</p>
+        <p style="font-size: 0.8125rem; margin-top: 0.25rem;">Resources will be added over time.</p>
+      </div>
+    )}
+
+    {Object.entries(grouped).map(([type, items]) =>
+      items.length > 0 && (
+        <section style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.125rem; font-weight: 600; color: #e2e8f0; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            {sectionLabels[type]}
+            <span style="font-size: 0.75rem; font-weight: 400; color: #475569; background-color: #1e293b; padding: 0.1rem 0.5rem; border-radius: 9999px;">{items.length}</span>
+          </h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 0.75rem;">
+            {items.map(resource => <ResourceCard resource={resource} />)}
+          </div>
+        </section>
+      )
+    )}
+
+    <!-- Design Notes (from markdown body) -->
+    {game.body.trim().length > 0 && (
+      <section style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #1e293b;">
+        <h2 style="font-size: 1.125rem; font-weight: 600; color: #e2e8f0; margin-bottom: 1.25rem;">Design Notes</h2>
+        <div class="prose" style="color: #94a3b8; line-height: 1.8; font-size: 0.9375rem; max-width: 700px;">
+          <Content />
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .prose h2 { color: #e2e8f0; font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+  .prose h3 { color: #cbd5e1; font-size: 0.9375rem; font-weight: 600; margin: 1rem 0 0.375rem; }
+  .prose p { margin-bottom: 0.875rem; }
+  .prose ul { margin-left: 1.25rem; list-style: disc; margin-bottom: 0.875rem; }
+  .prose li { margin-bottom: 0.25rem; }
+  .prose strong { color: #e2e8f0; }
+  .prose a { color: #818cf8; text-decoration: underline; }
+</style>

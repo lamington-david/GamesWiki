@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #030712;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer components {
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: rgb(31 41 55);
+    color: rgb(209 213 219);
+    border: 1px solid rgb(55 65 81);
+  }
+
+  .resource-card {
+    background-color: rgb(17 24 39);
+    border: 1px solid rgb(31 41 55);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: border-color 0.15s;
+  }
+
+  .resource-card:hover {
+    border-color: rgb(75 85 99);
+  }
+}
